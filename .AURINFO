@@ -1,0 +1,38 @@
+pkgbase = emacs-lucid-bzr
+	pkgdesc = Emacs from official Bazaar repository, lucid toolkit
+	pkgver = 118315
+	pkgrel = 1
+	url = http://www.gnu.org/software/emacs/
+	install = emacs-lucid-bzr.install
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = bzr
+	makedepends = texinfo
+	depends = librsvg
+	depends = giflib
+	depends = hicolor-icon-theme
+	depends = gpm
+	depends = imagemagick
+	depends = m17n-lib
+	depends = desktop-file-utils
+	depends = gnutls
+	depends = libxrandr
+	depends = libxinerama
+	provides = emacs=25.0.50.1
+	provides = cedet
+	conflicts = emacs
+	conflicts = emacs-nox
+	conflicts = emacs-bzr
+	conflicts = emacs-xwidget-bzr
+	conflicts = emacs-git
+	options = docs
+	options = !makeflags
+	options = !emptydirs
+	backup = usr/share/applications/emacs.desktop
+	backup = usr/share/emacs/site-lisp/subdirs.el
+	source = emacs::bzr+http://bzr.savannah.gnu.org/r/emacs/trunk/
+	md5sums = SKIP
+
+pkgname = emacs-lucid-bzr
+
